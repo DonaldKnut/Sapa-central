@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,700;1,700&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+*{
+    font-family: "Arvo";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+
+.container{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.head-wrapper{
+    background:url(/images/vegetable.png);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.luke{
+    width: 288px;
+}
+
+.arnold{
+    width: 377px;
+}
+
+.hero{
+    position: relative;
+    height: 120vh;
+    padding: 34px;
+    width: 100%;
+}
+
+.hero h1{
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.user-text h3{
+    margin:11px 0px;
+}
+
+
+.slide-show{
+    display: flex;
+    width: 3000px;
+    position: relative;
+    transition: 0.6s;
+}
+
+.slide-col{
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 345px;
+    height: 100%;
+}
+
+.user-text{
+    background: #191d25f1;
+    width: 237px;
+    height: 201px;
+    position: absolute;
+    left: 402px;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: white;
+    padding: 22px;
+}
+
+.text{
+    margin: 41px 23px;
+    color: wheat;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.indicator{
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+    bottom: -50%;
+}
+
+.small-btn{
+    display: inline-block;
+    height: 16px;
+    width: 17px;
+    margin: 103px 13px;
+    border-radius: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.link-consent{
+    text-decoration: none;
+    color: wheat;
+    transition:  0.5s;
+}
+
+.link-consent:hover{
+    text-decoration: underline;
+}
+
+
+
+.active{
+    width: 45px;
+}
+
+
+.user-text p{
+    font-size: 11px;
+}
+
+
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mobile-nav{
+    display: block;
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 180%;
+    padding: 190px 50px;
+    min-height: 100vh;
+    z-index: 98;
+    font-weight: bold;
+    background: linear-gradient(234deg,  #d4b577f6, #f7bc47f6);
+    box-shadow: 10px 1px 70px #ffd17a;
+    transition: 7s;
+}
+
+.mobile-nav li{
+    list-style: none;
+}
+
+
+.mobile-nav.is-active{
+    left: 0;
+}
+
+
+.mobile-nav a{
+    text-decoration: none;
+    margin: 11px 0;
+    color: #493b20;
+    transition: 0.5s;
+}
+
+.mobile-nav a:hover{
+    text-decoration: underline;
+    color: #f7f6f5;
+}
+
+.mobile-nav li{
+    text-decoration: none;
+    margin: 11px 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    display: none;
+}
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: flex; 
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 11px 0 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 84px;
+}
+
+.hamburger{
+    display: block;
+    width: 51px;
+    /* height: 32px; */
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    position: relative;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    width: 100%;
+    height: .5px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px -1px;
+    transition: .4s;
+    content: "";
+    display: block;
+}
+
+.hamburger.is-active::before{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.is-active::after{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8px;
+}
+
+.text{
+    position: relative;
+    z-index: 10;
+}
+
+.text h2{
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+
+.text h1{
+    font-size: 2rem;
+    margin: 20px 0;
+    /* font-weight: 400; */
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #303638;
+    mix-blend-mode: overlay;
+}
+
+.button{
+    padding: 12px 36px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    margin: 11px 0;
+    cursor: pointer;
+}
+
+.social{
+    position: absolute;
+    bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+   color: white;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.social li a:hover{
+    color: bisque;
+    transform: scale(1) translateY(-17px);
+}
+
+.primary-nav{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav__items{
+    display: none;
+}
+
+.primary-nav ul{
+    display: flex;
+}
+
+
+.main-nav__item{
+    list-style: none;
+    margin: 0 11px;
+}
+
+.main-nav__item a{
+    text-decoration: none;
+    color: white;
+}
+
+.uk-logo{
+    border-radius: 3px;
+    width: 33px;
+}
+
+.google-play{
+    width: 111px;
+}
+
+.apple-play{
+    width: 79px;
+}
+
+.app-ref{
+    display: flex;
+    align-items: center;
+}
+
+/* hr{
+    background: #493b20;
+} */
+
+
+@media(max-width: 991px){
+    .showcase, .showcase header{
+        padding: 30px;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+}
